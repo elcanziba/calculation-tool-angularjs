@@ -161,6 +161,9 @@
 		width: 30px;
 		font-size: .8em;
 	}
+	#myCalculator form select {
+		font-size: .8em;
+	}
 }
 
 
