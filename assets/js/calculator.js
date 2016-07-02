@@ -1,10 +1,10 @@
-/*JavaScript Elements*/
+//Calculation
 
 (function () {
 
 	var app = angular.module('myCalculator',[] );
 
-	/*Define a Controller*/
+	//Define a Controller
 	app.controller('calculatorController',['$scope',function($scope){
 
 		$scope.lumen_options = [375, 600, 900, 1125, 1600];
@@ -25,7 +25,7 @@
 			$scope.cfl_wattage = ($scope.current_lumens * $scope.cfl_conversion).toFixed(1);
 			$scope.led_wattage = ($scope.current_lumens * $scope.led_conversion).toFixed(1);
 
-			/*Set limit of hours to 24*/
+			//Set limit of hours to 24
 			if($scope.current_hours>24){
 				$scope.current_hours = 24;
 			}
